@@ -1,0 +1,49 @@
+﻿<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Pathfinding</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+    <body>
+        <div id="navbar">
+            <div id="nav">
+                <div class="dropdown">
+                    <button class="dropbtn">Algorithm Select ▼</button>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="setAlgor('A*')">A*</a>
+                        <a href="#" onclick="setAlgor('Dijkstra')">Dijkstra</a>
+                        <a href="#" onclick="setAlgor('Sample')">Sample</a>
+                    </div>
+                </div>
+                <button class="button" onclick="setStart()" id="startPoint">Place Start Point</button>
+                <button class="button" onclick="setEnd()" id="endPoint">Place End Point</button>
+                <button class="button" onclick="useWall()" id="wall">Place Wall</button>
+                <button class="button" onclick="clearCells(WALL)" id="clearWalls">Clear Walls</button>
+                <button class="button" onclick="clearAll()" id="clearAll">Clear All</button>
+                <button class="button" onclick="generateRand()" id="generateRandom">Generate Maze</button>
+                <button class="button" onclick="run()" id="run">Start Visualization</button>
+            </div>
+        </div>
+        <div style="width: auto; height: 10px"></div>
+        <div id="container">
+            <div id="draw_area">
+            </div>
+            <div id="console_area">
+                <div id="display">
+                    <p id="output">
+                        <script>
+                            var status = "Welcome to The Maze Runner. Please select an algorithm, and either draw your own maze or use the random maze generator. Then place a start and end point and press the start visualization button to begin.<br /><br />";
+                            document.getElementById("output").innerHTML = status.fontcolor("black");
+                        </script>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="cell.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+        <!script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"><!/script>
+        <!script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"><!/script>
+        <!script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"><!/script>
+        <link rel="stylesheet" href="style.css">
+    </body>
+</html>
