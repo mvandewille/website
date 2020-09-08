@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -266,6 +265,9 @@
             <i class="devicon-git-plain" title="Git"></i>
           </li>
           <li class="list-inline-item">
+            <i class="devicon-bootstrap-plain" title="Bootstrap"></i>
+          </li> 
+          <li class="list-inline-item">
             <i class="devicon-wordpress-plain" title="WordPress"></i>
           </li>
         </ul>
@@ -323,7 +325,7 @@
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
             <h3 class="mb-0">Python Binary Decoder</h3>
-                          <br>
+            <br>
             <div class="social-icons">
                 <span class="text-primary">Spring 2020</span>
             </div>
@@ -454,8 +456,8 @@
               <br>
              <div><strong>Description: </strong>This project was chosen from a selection of choices for CPR E 281 (Digital Logic) final project. The project requirements were to create a program capable of encrypting a 16-bit value (16-long string of 0s and 1s) based on a 32-bit key, resulting in the encrypted 16-bit value. Alternatively, the encrypted value could be passed with the same key and the program, when set to decrypt, would output the original 16-bit value. </div>
             <br>
-            <p>The program was created in Altera Quartus Prime software using logic circuits, or circuits that consist of only wires and logic gates such as AND, OR, and NOT gates. The project stipulated that the circuit must contain a register file capable of storing ten 8-bit values and a "magic value" necessary for the tiny encryption algorithm. Additionally, this register file should only have two read ports, which can be used to access two registers at one time, limiting how many values can be used in one calculation. Rather than use an additional register file, I opted to create an arithmetic and logic unit (ALU) that broke down the tiny encryption algorithm into single steps and would use registers 7-10 as temporary registers to cycle result values for later processing. For example, the ALU would take registers 1 and 2 and multiply them, storing the result into register 7. Register 7 would then be used during the next step, and so on. </p>
-            <p>The program would be operated using the switches on the FPGA board, which would allow you to load 8 bits at a time of either the 32-bit key or the 16-bit value using switches 0-7. Switch 8 acted as a toggle, dictating whether or not the bits were key or value bits, and switch 9 acted as a toggle to dictate whether the program would encode or decode. Not picture in the below images is a button that would be used to "Enter" the bits currently turned on by the switches.</p>
+            <p>The program was created in Altera Quartus Prime software using logic circuits, or circuits that consist of only wires and logic gates such as AND, OR, and NOT gates. The project stipulated that the circuit must contain a register file capable of storing ten 8-bit values and a "magic value" necessary for the tiny encryption algorithm. Additionally, this register file should only have two read ports, which can be used to access two registers at one time, limiting how many values can be used in one calculation. Rather than use an additional register file, I opted to create an arithmetic and logic unit (ALU) that broke down the tiny encryption algorithm into single steps and would use registers 7-10 as temporary registers to cycle result values for later processing. For example, the ALU would take registers 1 and 2 and multiply their values, storing the result into register 7. Register 7 would then be used during the next step, and so on. </p>
+            <p>The program would be operated using the switches on the FPGA board, which would allow the user to load 8 bits at a time of either the 32-bit key or the 16-bit value using switches 0-7. Switch 8 acted as a toggle, dictating whether or not the bits were key or value bits, and switch 9 acted as a toggle to dictate whether the program would encode or decode. Not picture in the below images is a button that would be used to "Enter" the bits currently turned on by the switches.</p>
             <div><strong>Primary Languages: </strong>Verilog</div>
             <br>
             <div><strong>Frameworks/Libraries: </strong>None</div>
